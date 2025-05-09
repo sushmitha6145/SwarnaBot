@@ -1,0 +1,10 @@
+Flask==2.3.3
+langchain-community
+langchain-together
+faiss-cpu
+nomic
+torch
+sentence-transformers
+langchain-huggingface
+einops
+Flask_limiter
