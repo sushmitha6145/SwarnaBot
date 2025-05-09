@@ -1,0 +1,163 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #e9eef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 90%;
+    max-width: 500px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.chat-header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chat-header .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.chat-header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.chat-header p {
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Chat Box */
+.chat-box {
+    flex: 1;
+    padding: 15px 20px;
+    overflow-y: auto;
+    background: #f7f8fa;
+}
+
+/* User and Bot Messages */
+.chat-box p {
+    margin: 5px 0;  /* Reduced vertical spacing */
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 80%;
+    word-wrap: break-word;
+    display: block;
+}
+
+/* User Messages (Questions) */
+.user {
+    background: #2575fc;
+    color: white;
+    align-self: flex-start;  /* Align to left */
+    text-align: left;
+    margin-right: auto;  /* Push to the left */
+}
+
+/* Bot Messages (Answers) */
+.bot {
+    background: #f1f1f1;
+    color: #333;
+    align-self: flex-start;  /* Align to left */
+    text-align: justify;  /* Fully justified text */
+    margin-right: auto;  /* Push to the left */
+    width: 100%;  /* Ensures full-width justification */
+    padding: 10px;
+}
+
+/* Adjust Spacing for Paragraphs inside bot messages */
+.bot p {
+    margin: 0;
+    margin-bottom: 3px; /* Ensures only a small gap between paragraphs */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Footer */
+.chat-footer {
+    padding: 10px 15px;
+    border-top: 1px solid #e0e0e0;
+    background: #ffffff;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0px 0px 4px rgba(106, 17, 203, 0.2);
+}
+
+button {
+    padding: 12px;
+    background: #242424;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #282828;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Scrollbar */
+.chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 4px;
+}
